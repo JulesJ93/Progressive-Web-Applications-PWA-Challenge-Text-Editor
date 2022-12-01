@@ -28,7 +28,7 @@ console.log('Data saved to the database', result);
 };
 
 // TODO: Add logic for a method that gets all the content from the database
-export const getDb = async () => console.error('getDb not implemented');
+export const getDb = async () => {
 console.log('GET from the database');
   // connect to DB and version we want to use
   const jateDB = await openDB('jate', 1);
