@@ -11,7 +11,10 @@ window.addEventListener('beforeinstallprompt', (event) => { // prevent the mini-
 });
 
 // TODO: Implement a click event handler on the `butInstall` element
-butInstall.addEventListener('click', async () => {});
+butInstall.addEventListener('click', async () => {const promptEvent = window.deferredPrompt;
+    if (!promptEvent) {
+      return;
+    }});
 
 // TODO: Add an handler for the `appinstalled` event
 window.addEventListener('appinstalled', (event) => {});
